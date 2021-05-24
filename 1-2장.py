@@ -176,7 +176,7 @@ with open('src.png','rb') as sf, open('dst.png','wb') as df:
         data = sf.read(BUF_SIZE)
         if not data:
             break
-        bf.write(data)
+        df.write(data)
 
 #2.8.4 SHA-256으로 파일 복사 검증하기
 
@@ -193,7 +193,7 @@ print("dst.png's hash : {}".format(sha_dst.hexidigest()))
 
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-dst_img = mgimg.imread('dst.png')
+dst_img = mpimg.imread('dst.png')
 print(dst_img)
 pseudo_img = dst_img[:,:,0] #의사 색상 적용하기
 print(pseudo_img)
