@@ -2,7 +2,7 @@
 
 #enumerate()
 FAANG = ['FB','AMZN','AAPL','NFLX','GOOGL']
-for idx, symbol in enumerate(FAANG,1): #반복자료형,인덱스의 시작값
+for idx, symbol in enumerate(FAANG,1): #반복자료형,인덱스의 시작값.
     print(idx,symbol)    
 #while else와 for else ->break문에 의해 종료되면 실행되지 않음
 i = 0
